@@ -2,6 +2,6 @@
 <h2>Gradle</h2>
 <pre>dependencies {
     ...
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.kartikp.stackimageview:stackimageview:0.0.5'
 }
 </pre>
