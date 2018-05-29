@@ -29,23 +29,14 @@ For display images in circular shape with horizontally overlapping, use **StackI
         app:profileImageBorderColor="#DC143C"
         app:profileImageBorderWidth="2dp"
         app:profileImageDimen="65dp"
-        app:profileImageLoaderColor="#FF7F50"
-        app:profileImageLoaderDimen="20dp"
         app:profileImageLoaderVisible="true"
-        app:profileImageLoadingFailedBgColor="#2F4F4F"
         app:profileImagePlaceHolder="@drawable/ic_star_icon"
-        app:profileImagePlaceHolderDimen="20dp"
-        app:profileImagePlaceHolderVisible="true"
         app:countTextViewBg="#000080"
         app:countTextViewBorderColor="#3CB371"
-        app:countTextViewBorderWidth="2dp"
         app:countTextViewColor="#FF8C00"
-        app:countTextViewDimen="65dp"
-        app:countTextViewImageDimen="20dp"
         app:countTextViewImageInsteadOfText="true"
         app:countTextViewImageSource="@drawable/ic_star_icon"
-        app:countTextViewPosition="after"
-        app:countTextViewSize="18sp"/>
+        app:countTextViewPosition="after"/>
 ```
 You must use following proprties in your XML to customize **StackImageView** as per your requirements.
 > Properties :
@@ -61,4 +52,21 @@ You must use following proprties in your XML to customize **StackImageView** as 
 - `app:countTextViewColor="#FF8C00"` (color) -> default ORANGE
 - `app:countTextViewImageInsteadOfText="true"` (boolean) -> default false
 
-   and more other properties.
+   and other more properties.
+### JAVA
+```
+StackImageView stackImageView = findViewById(R.id.stackImageView);
+// Set image url list.
+stackImageView.setImageUrlArrayList(getImageUrlList());
+stackImageView.setMaxVisibleProfileImage(4);
+stackImageView.setGapBetweenViews(20);
+stackImageView.setProfileImageBorderColor(Color.RED);
+stackImageView.setProfileImageBorderWidth(5);
+stackImageView.setProfileImageDimen(150);
+stackImageView.setProfileImageLoaderVisible(true);
+stackImageView.setProfileImagePlaceHolder(R.drawable.ic_image_placeholder_icon);
+stackImageView.setCountTextViewBg(Color.parseColor("#0000FF"));
+stackImageView.setCountTextViewBorderColor(Color.WHITE);
+stackImageView.setCountTextViewColor(Color.parseColor("#FFFFFF"));
+stackImageView.setCountTextViewImageInsteadOfText(false);
+```
