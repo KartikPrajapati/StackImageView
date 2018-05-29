@@ -5,6 +5,7 @@ dependencies
 {
 
 ...
+
 compile 'com.kartikp.stackimageview:stackimageview:0.0.5'
 
 }
