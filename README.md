@@ -2,12 +2,10 @@
 <p>StackImageView </p>
 <h2>Gradle</h2>
 <pre>
-dependencies {
-    repositories {
+repositories {
         google()
         jcenter()
     }
-}
 
 dependencies {
     ...
