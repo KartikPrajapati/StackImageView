@@ -3,9 +3,10 @@
 <h2>Gradle</h2>
 <pre>
 repositories {
-        google()
-        jcenter()
-    }
+   google()
+   jcenter()
+}
+
 
 dependencies {
     ...
