@@ -61,4 +61,4 @@ You must use following proprties in your XML to customize **StackImageView** as 
 - `app:countTextViewColor="#FF8C00"` (color) -> default ORANGE
 - `app:countTextViewImageInsteadOfText="true"` (boolean) -> default false
 
-and more other properties.
+   and more other properties.
