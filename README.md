@@ -1,10 +1,11 @@
 # StackImageView
 StackImageView provides horizontally overlapped image collection for android. It is best when you want to display group members in your android app.
 ## Gradle
-dependencies {
+dependencies
+{
 
-    ...
-    compile 'com.kartikp.stackimageview:stackimageview:0.0.5'
+...
+compile 'com.kartikp.stackimageview:stackimageview:0.0.5'
 
 }
 
