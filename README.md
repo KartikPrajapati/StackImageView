@@ -3,11 +3,8 @@ StackImageView provides horizontally overlapped image collection for android. It
 ## Gradle
 dependencies
 {
-
 ...
-
 compile 'com.kartikp.stackimageview:stackimageview:0.0.5'
-
 }
 
 [MarkDown Link](http://github.com)
