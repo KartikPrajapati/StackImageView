@@ -18,7 +18,7 @@ dependencies {
 ## Usage
 For display images in circular shape with horizontally overlapping, use **StackImageView** in your layout XML file.
 ### XML
-```
+```javascript
 <com.kartikp.stackimageview.StackImageView
         android:id="@+id/stackImageView"
         android:layout_width="wrap_content"
@@ -54,7 +54,7 @@ You must use following proprties in your XML to customize **StackImageView** as 
 
    and other more properties.
 ### JAVA
-```
+```javascript
 StackImageView stackImageView = findViewById(R.id.stackImageView);
 // Set image url list.
 stackImageView.setImageUrlArrayList(getImageUrlList());
@@ -70,3 +70,6 @@ stackImageView.setCountTextViewBorderColor(Color.WHITE);
 stackImageView.setCountTextViewColor(Color.parseColor("#FFFFFF"));
 stackImageView.setCountTextViewImageInsteadOfText(false);
 ```
+## Credits
+Kartik Prajapati
+> kartikp0109@gmail.com
