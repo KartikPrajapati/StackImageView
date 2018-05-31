@@ -7,15 +7,7 @@ There are lots of customization option available as below:
 - Max visible images.
 - Gap between images.
 - CircularImage dimension & background color.
-- CircularImage border color & width.
-- CircularImage loader visibility, dimension, color.
-- CircularImage placeholder visibility, dimension, source image.
-- CountTextView dimension & background color.
-- CountTextView text size & color.
-- CountTextView border color & width.
-- CountTextView image visibility instead of text.
-- CountTextView image dimension & source image.
-- CountTextView position.
+
 ## Gradle
 Add following line of code into your top level build.gradle file :
 ```
