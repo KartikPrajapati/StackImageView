@@ -1,8 +1,6 @@
+![screenshot1](https://github.com/KartikPrajapati/StackImageView/blob/master/screenshot1.jpg)
 # StackImageView
 StackImageView Provides horizontally overlapping of circular images with lots of customization.
-<br/>
-<br/>
-![screenshot1](https://github.com/KartikPrajapati/StackImageView/blob/master/screenshot1.jpg)
 ## Gradle
 Add following line of code into your top level build.gradle file :
 ```
