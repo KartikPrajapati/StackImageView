@@ -87,7 +87,25 @@ stackImageView.setCountTextViewColor(Color.parseColor("#FFFFFF"));
 stackImageView.setCountTextViewImageInsteadOfText(false);
 stackImageView.initViews();
 ```
-## Credits
+## Release Notes
+- 0.0.5
+  - Code optimization of maxVisibleImage() & countTextViewPosition().
+  - Fix CountTextView background color issue.
+  - Fix CircularImage placeholder dimension issue.
+- 0.0.4
+  - Add getter - setter methods for customization from JAVA file.
+  - Add support for dynamic customization.
+  - Fix CountTextView text size issue.
+  - Improve CountTextView text size handling mechanism.
+- 0.0.3
+  - Add new customization features.
+  - Remove redundunt customization features.
+  - Fix CircularImage border issue.
+- 0.0.2
+  - Fix bugs & prevent crashes.
+- 0.0.1
+  - Initial release.
+## Author
 Kartik Prajapati
 > kartikp0109@gmail.com
 ## License
