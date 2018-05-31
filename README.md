@@ -1,6 +1,21 @@
-![screenshot1](https://github.com/KartikPrajapati/StackImageView/blob/master/screenshot1.jpg)
 # StackImageView
 StackImageView Provides horizontally overlapping of circular images with lots of customization.
+<br/><br/>
+![screenshot1](https://github.com/KartikPrajapati/StackImageView/blob/master/screenshot1.jpg)
+<br/><br/>
+There are lots of customization option available like:
+- Max visible images.
+- Gap between images.
+- CircularImage dimension & background color.
+- CircularImage border color & width.
+- CircularImage loader visibility, dimension, color.
+- CircularImage placeholder visibility, dimension, source image.
+- CountTextView dimension & background color.
+- CountTextView text size & color.
+- CountTextView border color & width.
+- CountTextView image visibility instead of text.
+- CountTextView image dimension & source image.
+- CountTextView position.
 ## Gradle
 Add following line of code into your top level build.gradle file :
 ```
@@ -31,7 +46,7 @@ For display images in circular shape with horizontally overlapping, use **StackI
         app:profileImageBorderWidth="2dp"
         app:profileImageDimen="65dp"
         app:profileImageLoaderVisible="true"
-        app:profileImagePlaceHolder="@drawable/ic_star_icon"
+        app:profileImagePlaceHolder="@drawable/ic_star_icon"    
         app:countTextViewBg="#000080"
         app:countTextViewBorderColor="#3CB371"
         app:countTextViewColor="#FF8C00"
