@@ -38,7 +38,7 @@ For display images in circular shape with horizontally overlapping, use **StackI
         app:countTextViewImageSource="@drawable/ic_star_icon"
         app:countTextViewPosition="after"/>
 ```
-You must use following proprties in your XML to customize **StackImageView** as per your requirements.
+You have to use following proprties in your XML to customize **StackImageView** as per your requirements.
 > Properties :
 - `app:maxVisibleProfileImage="5"` (integer) -> default 5
 - `app:gapBetweenViews="-10dp"` (dimension) -> default -10dp
@@ -69,7 +69,24 @@ stackImageView.setCountTextViewBg(Color.parseColor("#0000FF"));
 stackImageView.setCountTextViewBorderColor(Color.WHITE);
 stackImageView.setCountTextViewColor(Color.parseColor("#FFFFFF"));
 stackImageView.setCountTextViewImageInsteadOfText(false);
+stackImageView.initViews();
 ```
 ## Credits
 Kartik Prajapati
 > kartikp0109@gmail.com
+## License
+````
+Copyright 2018 Kartik Prajapati
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+````
