@@ -1,5 +1,5 @@
 # StackImageView
-StackImageView Provides horizontally overlapping of circular images with lots of customization.
+StackImageView Provides horizontally overlapping of circular images with lots of customization. You can customize StackImageView as per your requirements from both layout XML file and JAVA file.
 <br/><br/>
 ![screenshot1](https://github.com/KartikPrajapati/StackImageView/blob/master/screenshot1.jpg)
 <br/><br/>
