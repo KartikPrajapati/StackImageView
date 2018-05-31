@@ -3,7 +3,7 @@ StackImageView Provides horizontally overlapping of circular images with lots of
 <br/><br/>
 ![screenshot1](https://github.com/KartikPrajapati/StackImageView/blob/master/screenshot1.jpg)
 <br/><br/>
-There are lots of customization option available like:
+There are lots of customization option available as below:
 - Max visible images.
 - Gap between images.
 - CircularImage dimension & background color.
