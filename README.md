@@ -10,12 +10,13 @@ There are lots of customization option available as below:
 - CircularImage border color & width.
 - CircularImage loader visibility, dimension, color.
 - CircularImage placeholder visibility, dimension, source image.
-- CountTextView dimension & background color.
-- CountTextView text size & color.
-- CountTextView border color & width.
-- CountTextView image visibility instead of text.
-- CountTextView image dimension & source image.
-- CountTextView position.
+- CountView dimension & background color.
+- CountView text size & color.
+- CountView border color & width.
+- CountView image visibility instead of text.
+- CountView image dimension & source image.
+- CountView position.
+- CountView text font.
 ## Gradle
 Add following line of code into your top level build.gradle file :
 ```
@@ -28,66 +29,87 @@ Add following line of code into your app level build.gradle file :
 ```
 dependencies {
     ...
-    compile 'com.kartikp.stackimageview:stackimageview:0.0.5'
+    compile 'com.kartikp.stackimageview:stackimageview:0.0.6'
 }
 ```
 ## Usage
 For display images in circular shape with horizontally overlapping, use **StackImageView** in your layout XML file.
 ### XML
 ```javascript
-<com.kartikp.stackimageview.StackImageView
+<com.kartikp.stackimageview.customviews.StackImageView
         android:id="@+id/stackImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        app:maxVisibleProfileImage="5"
-        app:gapBetweenViews="-10dp"
-        app:profileImageBorderColor="#DC143C"
-        app:profileImageBorderWidth="2dp"
-        app:profileImageDimen="65dp"
-        app:profileImageLoaderVisible="true"
-        app:profileImagePlaceHolder="@drawable/ic_star_icon"    
-        app:countTextViewBg="#000080"
-        app:countTextViewBorderColor="#3CB371"
-        app:countTextViewColor="#FF8C00"
-        app:countTextViewImageInsteadOfText="true"
-        app:countTextViewImageSource="@drawable/ic_star_icon"
-        app:countTextViewPosition="after"/>
+        app:siv_max_visible_circular_image="5"
+        app:siv_gap_between_views="-10dp"
+        app:siv_circular_image_dimen="65dp"
+        app:siv_circular_image_border_width="5dp"
+        app:siv_circular_image_border_color="#FFFFFF"
+        app:siv_circular_image_loader_visible="true"
+        app:siv_circular_image_loader_dimen="18dp"
+        app:siv_circular_image_loader_color="#FFFFFF"
+        app:siv_circular_image_place_holder_visible="true"
+        app:siv_circular_image_place_holder_dimen="25dp"
+        app:siv_circular_image_place_holder="@drawable/ic_uses_1_icon"
+        app:siv_circular_image_loading_failed_bg_color="#656565"
+        app:siv_count_view_dimen="65dp"
+        app:siv_count_view_border_width="5dp"
+        app:siv_count_view_border_color="#FFFFFF"
+        app:siv_count_view_position="after"
+        app:siv_count_view_bg_color="#656565"
+        app:siv_count_view_text_size="21sp"
+        app:siv_count_view_text_color="#FFFFFF"
+        app:siv_count_view_text_font="@font/lobster"
+        app:siv_count_view_image_instead_of_text="true"
+        app:siv_count_view_image_dimen="30dp"
+        app:siv_count_view_image_source="@drawable/ic_more_icon"/>
 ```
-You have to use following proprties in your XML to customize **StackImageView** as per your requirements.
-> Properties :
-- `app:maxVisibleProfileImage="5"` (integer) -> default 5
-- `app:gapBetweenViews="-10dp"` (dimension) -> default -10dp
-- `app:profileImageBorderColor="#DC143C"` (color) -> default PINK
-- `app:profileImageBorderWidth="2dp"` (dimension) -> default 2dp
-- `app:profileImageDimen="65dp" `(dimension) -> default 60dp
-- `app:profileImageLoaderVisible="true"` (boolean)-> default true
-- `app:profileImagePlaceHolder="@drawable/ic_launcher_icon"` (resource) -> default ic_launcher.png
-- `app:countTextViewBg="#000080"` (color) -> default BLUE
-- `app:countTextViewBorderColor="#3CB371"` (color) -> default GREEN
-- `app:countTextViewColor="#FF8C00"` (color) -> default ORANGE
-- `app:countTextViewImageInsteadOfText="true"` (boolean) -> default false
-
-   and other more properties.
 ### JAVA
 ```javascript
-StackImageView stackImageView = findViewById(R.id.stackImageView);
-// Set image url list.
+stackImageView = findViewById(R.id.stackImageView);
 stackImageView.setImageUrlArrayList(getImageUrlList());
-stackImageView.setMaxVisibleProfileImage(4);
-stackImageView.setGapBetweenViews(20);
-stackImageView.setProfileImageBorderColor(Color.RED);
-stackImageView.setProfileImageBorderWidth(5);
-stackImageView.setProfileImageDimen(150);
-stackImageView.setProfileImageLoaderVisible(true);
-stackImageView.setProfileImagePlaceHolder(R.drawable.ic_image_placeholder_icon);
-stackImageView.setCountTextViewBg(Color.parseColor("#0000FF"));
-stackImageView.setCountTextViewBorderColor(Color.WHITE);
-stackImageView.setCountTextViewColor(Color.parseColor("#FFFFFF"));
-stackImageView.setCountTextViewImageInsteadOfText(false);
+stackImageView.setStackImageViewClickListener(new StackImageViewClickListener()
+{
+    @Override
+    public void onStackImageViewClick()
+    {
+        // Handle StackImageView Click.
+    }
+});
+stackImageView.setMaxVisibleCircularImage(5);
+stackImageView.setGapBetweenViews(-10);
+stackImageView.setCircularImageDimen(65);
+stackImageView.setCircularImageBorderWidth(5);
+stackImageView.setCircularImageBorderColor(Color.parseColor("#FFFFFF"));
+stackImageView.setCircularImageLoaderVisible(true);
+stackImageView.setCircularImageLoaderDimen(20);
+stackImageView.setCircularImageLoaderColor(Color.parseColor("#FFFFFF"));
+stackImageView.setCircularImagePHVisible(true);
+stackImageView.setCircularImagePHDimen(25);
+stackImageView.setCircularImagePH(R.drawable.ic_uses_1_icon);
+stackImageView.setCircularImageLoadingFailedBgColor(Color.parseColor("#656565"));
+
+stackImageView.setCountViewDimen(65);
+stackImageView.setCountViewBorderWidth(5);
+stackImageView.setCountViewBorderColor(Color.WHITE);
+stackImageView.setCountViewPosition(StackImageView.COUNT_VIEW_POSITION_AFTER);
+stackImageView.setCountViewBgColor(Color.parseColor("#656565"));
+stackImageView.setCountViewTextSize(21);
+stackImageView.setCountViewTextColor(Color.parseColor("#FFFFFF"));
+stackImageView.setCountViewTextFont(R.font.lobster);
+stackImageView.setCountViewImageInsteadOfText(true);
+stackImageView.setCountViewImageDimen(30);
+stackImageView.setCountViewImageSource(R.drawable.ic_more_icon);
+// It is compulasory to initialize StackImageView.
 stackImageView.initViews();
 ```
 ## Release Notes
+- 0.0.6
+  - Solve CircularImageView & CountView border issue.
+  - Add support for CountView text font.
+  - Add comments on each functions to better understand function mechanism.
+  - Improve naming convension.
 - 0.0.5
   - Code optimization of maxVisibleImage() & countTextViewPosition().
   - Fix CountTextView background color issue.
