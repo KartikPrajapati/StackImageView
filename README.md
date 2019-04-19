@@ -70,41 +70,50 @@ For display images in circular shape with horizontally overlapping, use **StackI
 ### JAVA
 ```javascript
 stackImageView = findViewById(R.id.stackImageView);
-stackImageView.setImageUrlArrayList(getImageUrlList());
-stackImageView.setStackImageViewClickListener(new StackImageViewClickListener()
+stackImageView.setImageLists(setImageResources());
+stackImageView.setOnImageClickListener(new OnImageClickListener()
 {
     @Override
-    public void onStackImageViewClick()
+    public void onClick() 
     {
         // Handle StackImageView Click.
     }
 });
-stackImageView.setMaxVisibleCircularImage(5);
-stackImageView.setGapBetweenViews(-10);
-stackImageView.setCircularImageDimen(65);
-stackImageView.setCircularImageBorderWidth(5);
-stackImageView.setCircularImageBorderColor(Color.parseColor("#FFFFFF"));
-stackImageView.setCircularImageLoaderVisible(true);
-stackImageView.setCircularImageLoaderDimen(20);
-stackImageView.setCircularImageLoaderColor(Color.parseColor("#FFFFFF"));
-stackImageView.setCircularImagePHVisible(true);
-stackImageView.setCircularImagePHDimen(25);
-stackImageView.setCircularImagePH(R.drawable.ic_uses_1_icon);
-stackImageView.setCircularImageLoadingFailedBgColor(Color.parseColor("#656565"));
+stackImageView.setMaxVisibleImage(5);
+stackImageView.setImageGap(-25);
+stackImageView.setImageDimen(65);
+stackImageView.setImageBorderWidth(3);
+stackImageView.setImageBorderColor(R.color.coral);
+stackImageView.setImageLoaderVisibility(true);
+stackImageView.setImageLoaderDimen(16);
+stackImageView.setImageLoaderColor(R.color.white);
+stackImageView.setImagePHVisibility(true);
+stackImageView.setImagePHDimen(30);
+stackImageView.setImagePlaceHolder(R.drawable.ic_ph_2_icon);
+stackImageView.setImageBackgroundColor(R.color.dark_cyan);
 
-stackImageView.setCountViewDimen(65);
-stackImageView.setCountViewBorderWidth(5);
-stackImageView.setCountViewBorderColor(Color.WHITE);
-stackImageView.setCountViewPosition(StackImageView.COUNT_VIEW_POSITION_AFTER);
-stackImageView.setCountViewBgColor(Color.parseColor("#656565"));
-stackImageView.setCountViewTextSize(21);
-stackImageView.setCountViewTextColor(Color.parseColor("#FFFFFF"));
-stackImageView.setCountViewTextFont(R.font.lobster);
-stackImageView.setCountViewImageInsteadOfText(true);
-stackImageView.setCountViewImageDimen(30);
-stackImageView.setCountViewImageSource(R.drawable.ic_more_icon);
-// It is compulasory to initialize StackImageView.
-stackImageView.initViews();
+stackImageView.setCountDimen(65);
+stackImageView.setCountBorderColor(R.color.coral);
+stackImageView.setCountViewPosition(StackImageView.COUNT_POSITION_AFTER);
+stackImageView.setCountBgColor(R.color.dark_cyan);
+stackImageView.setCountTextSize(R.dimen.text_size_20_sp);
+stackImageView.setCountTextColor(Color.parseColor("#FFFFFF"));
+stackImageView.setCountTextFont(R.font.sofia_regular);
+stackImageView.setCountImageInsteadOfText(true);
+stackImageView.setCountImageDimen(30);
+stackImageView.setCountImageSource(R.drawable.ic_more_icon);
+stackImageView.setOverlapType(StackImageView.BOTTOM_TO_TOP_OVERLAP);
+
+private ArrayList<Object> setImageResources() 
+{
+    ArrayList<Object> imageLists = new ArrayList<>();
+    imageLists.add(R.drawable.ic_flower_1_image);
+    imageLists.add(R.drawable.ic_flower_2_image);
+    imageLists.add(R.drawable.ic_flower_3_image);
+    imageLists.add(R.drawable.ic_flower_4_image);
+    return imageLists;
+}
+
 ```
 ## Release Notes
 - 0.0.2
