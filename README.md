@@ -30,7 +30,7 @@ Add following line of code into your app level build.gradle file :
 ```
 dependencies {
     ...
-    compile 'com.kartikp.stackimageview:stackimageview:0.0.6'
+    compile 'com.kartik.stackimageview:stackimageview:0.0.2'
 }
 ```
 ## Usage
