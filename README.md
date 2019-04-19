@@ -69,7 +69,7 @@ For display images in circular shape with horizontally overlapping, use **StackI
 ```
 ### JAVA
 ```javascript
-stackImageView = findViewById(R.id.stackImageView);
+StackImageView stackImageView = findViewById(R.id.stackImageView);
 stackImageView.setImageLists(setImageResources());
 stackImageView.setOnImageClickListener(new OnImageClickListener()
 {
