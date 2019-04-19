@@ -17,6 +17,7 @@ There are lots of customization option available as below:
 - CountView image dimension & source image.
 - CountView position.
 - CountView text font.
+- Overlapping type.
 ## Gradle
 Add following line of code into your top level build.gradle file :
 ```
